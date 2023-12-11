@@ -4,9 +4,9 @@ Welcome to the repository for the AndroidAnimation Android application built usi
 
 ## Features 🎯
 
-- Simple and intuitive UI
-- Built with Jetpack Compose
-- Demonstrates the use of animation components in Compose
+- **State and Animation**: The `HomePage` composable uses mutable states to control the color, size, and visibility of a box. It also animates these changes using `animateColorAsState` and `animateDpAsState`.
+- **Interactive Elements**: The `HomePage` includes buttons that allow the user to interact with the box. These buttons can change the color, size, and visibility of the box.
+- **Visibility Animation**: The visibility of the box is animated using `AnimatedVisibility`, providing a smooth transition when the box is shown or hidden.
 
 ## Screenshots 📸
 
