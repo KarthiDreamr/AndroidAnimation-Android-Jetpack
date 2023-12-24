@@ -10,17 +10,8 @@ Welcome to the repository for the AndroidAnimation Android application built usi
 
 ## Screenshots 📸
 
-### Home Screen
-![Screenshot 1](assets/screen1.png)
+<img src="assets/screen1.png" width="200"/> <img src="assets/screen2.png" width="200"/> <img src="assets/screen3.png" width="200"/> <img src="assets/screen4.png" width="200"/>
 
-### Change Color
-![Screenshot 2](assets/screen2.png)
-
-### Change Size
-![Screenshot 3](assets/screen3.png)
-
-### Hide/Show
-![Screenshot 4](assets/screen4.png)
 
 ## How to run 🏃‍♂️
 
