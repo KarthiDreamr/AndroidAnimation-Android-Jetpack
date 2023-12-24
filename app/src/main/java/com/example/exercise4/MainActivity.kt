@@ -6,7 +6,6 @@ import androidx.activity.compose.setContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.animateColorAsState
 import androidx.compose.animation.core.animateDpAsState
-import androidx.compose.animation.core.updateTransition
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -49,12 +48,12 @@ class MainActivity : ComponentActivity() {
 
 @Composable
 fun HomePage() {
+
     var blue by remember { mutableStateOf(true) }
-    val BoxColor by animateColorAsState(if(blue) Color.Green else Color.Magenta, label = "BlueOrange")
+    val boxColor by animateColorAsState(if(blue) Color.Red else Color.Green, label = "BlueOrange")
 
     var bigBox by remember { mutableStateOf(true) }
-    val transition = updateTransition(targetState = bigBox, label = "ChangeSize")
-    val BoxSize by animateDpAsState(if(bigBox) 80.dp else 120.dp, label = "BigSmall")
+    val boxSize by animateDpAsState(if(bigBox) 80.dp else 120.dp, label = "BigSmall")
 
     var visibeBox by remember { mutableStateOf(true) }
 
@@ -90,15 +89,13 @@ fun HomePage() {
         }
         Spacer(modifier = Modifier.size(20.dp))
 
-
         AnimatedVisibility(visibeBox){
             Box (
                 modifier = Modifier
-                    .size(BoxSize)
-                    .background(BoxColor)
+                    .size(boxSize)
+                    .background(boxColor)
             )
         }
 
     }
-
 }
